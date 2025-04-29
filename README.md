@@ -25,8 +25,8 @@ All pages are built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap 5**
 
 ## Deployment
 
-These pages are fully responsive and can be deployed directly on any static hosting service such as GitHub Pages, Netlify, or Vercel.
-
+These pages are fully responsive and can be deployed directly on any static hosting service.
+Website: https://edutrade.vn/
 ## Note
 
 This repository only contains **frontend pages**. Backend integration (APIs, server-side validation) is expected to be added separately depending on the deployment plan.
