@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="css/register.css" rel='stylesheet' type='text/css' media="all" />
+</head>
+<body>
+<div class="container d-flex justify-content-center align-items-center min-vh-100" id="bth-main-container">
+    <div class="row w-100 register-edutrade mx-auto" id="bth-register-row">
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center content-register1" id="bth-logo-column">
+            <img src="images/logo.jpg" class="logo" alt="Logo" id="bth-logo-image">
+        </div>
+        <div class="col-lg-7 col-md-12 d-flex justify-content-center align-items-center content-register2" id="bth-form-column">
+            <div class="register-form p-4 p-lg-5" id="bth-register-form">
+                <form action="#" method="post" id="bth-register-form-content">
+                    <div class="register-header mb-4" id="bth-form-header">
+                        <p>Thông tin Tài khoản</p>
+                        <p style="font-size: 14px; font-weight: 300; margin-top: 5px;" id="bth-info-text">Tạo tài khoản để khám phá hệ sinh thái đầu tư chuẩn mực và tin cậy của Edu Trade</p>
+                    </div>
+                    <div class="mb-3" id="bth-full-name-section">
+                        <label for="bth-Username" class="form-label">Họ và tên <span class="required-indicator" style="color: red;">*</span></label>
+                        <div class="input-container">
+                            <input type="text" id="bth-Username" class="form-control" required placeholder="Nhập họ và tên trên CMND/CCCD">
+                        </div>
+                        <p style="font-size: 13px; font-weight: 300; margin-top: 3px;" id="bth-full-name-info">- Nhập họ và tên trên CMND/CCCD</p>
+                    </div>
+                    <div class="mb-3" id="bth-phone-number-section">
+                        <label for="bth-inputPhoneNumber" class="form-label">Số điện thoại <span class="required-indicator">*</span></label>
+                        <div class="input-container">
+                            <input type="text" id="bth-inputPhoneNumber" class="form-control" placeholder="Nhập số điện thoại" required>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bth-verificationModal">Xác minh</button>
+                        </div>
+                        <p id="bth-phone-validation-text" class="requirement-text mt-2">
+                            <span class="required-indicator"><i class="bi bi-exclamation-triangle"></i></span>
+                            Số điện thoại sử dụng cho mục đích xác thực vui lòng kiểm tra kĩ trước khi xác nhận
+                        </p>
+                    </div>
+                    <div class="mb-3" id="bth-email-section">
+                        <label for="bth-inputEmail" class="form-label">Địa chỉ email <span class="required-indicator" style="color: red;">*</span></label>
+                        <div class="input-container">
+                            <input type="email" id="bth-inputEmail" class="form-control" placeholder="Nhập địa chỉ Email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-referral-section">
+                        <label for="bth-referralCode" class="form-label">Bạn có được ai giới thiệu về Edu Trade không?</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-referralCode" class="form-control" placeholder="Mã nhân viên tư vấn (Nếu có)">
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-account-number-section">
+                        <label for="bth-accountNumber" class="form-label">Số tài khoản</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-accountNumber" class="form-control" placeholder="Nhập số tài khoản ngân hàng">
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-account-holder-section">
+                        <label for="bth-accountHolder" class="form-label">Tên chủ tài khoản</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-accountHolder" class="form-control" placeholder="Nhập tên chủ tài khoản ngân hàng">
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-bank-name-section">
+                        <label for="bth-bankName" class="form-label">Tên ngân hàng</label>
+                        <div class="input-container">
+                            <select class="form-select" id="bth-bankName" aria-label="Chọn ngân hàng">
+                                <option selected>Chọn ngân hàng</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" id="bth-submitButton" class="register-button btn btn-warning w-100 mt-3">Tiếp tục</button>
+                    <p class="register mt-3 text-center">
+                        <a href="" class="link-register" id="bth-return-link">Quay lại</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal -->
+<div class="modal fade" id="bth-verificationModal" tabindex="-1" aria-labelledby="bth-verificationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="bth-verificationModalLabel">Nhập mã xác minh</h1>
+      </div>
+      <div class="modal-body">
+        <input type="password" id="bth-verificationCode" class="form-control" placeholder="Nhập mã xác minh" required>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="bth-verifyButton">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/contact.js"></script> 
+</body>
+</html>

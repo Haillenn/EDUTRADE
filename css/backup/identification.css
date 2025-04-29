@@ -1,0 +1,296 @@
+/*--- reset code ---*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border: none;
+}
+
+/* start editing from here */
+a {
+	text-decoration: none;
+}
+.txt-rt {
+	text-align: right;
+} /* text align right */
+.txt-lt {
+	text-align: left;
+} /* text align left */
+.txt-center {
+	text-align: center;
+} /* text align center */
+.float-rt {
+	float: right;
+} /* float right */
+.float-lt {
+	float: left;
+} /* float left */
+.clear {
+	clear: both;
+} /* clear float */
+.pos-relative {
+	position: relative;
+} /* Position Relative */
+.pos-absolute {
+	position: absolute;
+} /* Position Absolute */
+.vertical-base {
+	vertical-align: baseline;
+} /* vertical align baseline */
+.vertical-top {
+	vertical-align: top;
+} /* vertical align top */
+nav.vertical ul li {
+	display: block;
+} /* vertical menu */
+nav.horizontal ul li {
+	display: inline-block;
+} /* horizontal menu */
+img {
+	max-width: 100%;
+}
+
+/*--- end reset code ---*/
+body {
+	background: url(../images/background-light.png) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.register-edutrade {
+	background-color: #ffffff5b;
+	width: 100%;
+	max-width: 900px;
+	margin: 100px auto;
+	padding: 0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.register-edutrade .content-register1 {
+	background-color: azure;
+	background-position: center;
+	background-size: cover;
+	height: 600px; 
+	border-radius: 10px 0 0 10px;
+	flex: 1; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.h1{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.tag-name{
+    font-style: bold;
+    font-weight: 300;
+}
+
+.logo {
+	max-width: 50%; 
+	height: auto; 
+}
+
+.register-edutrade .content-register2 {
+	padding: 20px 30px; 
+	flex: 1; 
+}
+
+.register-header {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+
+.register-button {
+	margin-top: 15px;
+	width: 100%;
+	border-radius: 5px;
+	height: 40px;
+	background-color: #47df93;
+	color: #fff;
+	border: none;
+    text-transform: uppercase;
+}
+
+.register-button:hover {
+	background-color: #22c581;
+	color: #fff;
+	font-style: bold;
+}
+
+
+/* scroll */
+.register-form {
+    max-height: 555px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.register-form::-webkit-scrollbar {
+    width: 5px;
+}
+
+.register-form::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+.register-form::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+.register-form::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Ẩn các mũi tên cuộn đầu cuối */
+.register-form::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.custom-border {
+    border: 2px dashed #47df93; 
+    border-radius: 7px; 
+    padding: 10px; 
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: 300; 
+}
+
+.upload-section1 {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 5px;
+}
+.upload-section1 .upload-a{
+    color: #22c581;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.upload-section2 {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.upload-section2 .upload-a{
+    color: #22c581;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.link-register{
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.upload-section2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.upload-section2 p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.signature-container {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.signature-canvas {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+.signature-info p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.signature-info i {
+    color: #666;
+}
+
+.upload-section2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.upload-section2 p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.upload-image {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.upload-info p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.upload-info i {
+    color: #666;
+}
+
+/* Hide the file input */
+.file-input {
+    display: none;
+}

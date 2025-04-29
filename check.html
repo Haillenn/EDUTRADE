@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="css/register.css" rel='stylesheet' type='text/css' media="all" />
+</head>
+<body>
+<div class="container d-flex justify-content-center align-items-center min-vh-100" id="bth-main-container">
+    <div class="row w-100 register-edutrade mx-auto" id="bth-register-row">
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center content-register1" id="bth-logo-column">
+            <img src="images/logo.jpg" class="logo" alt="Logo" id="bth-logo-image">
+        </div>
+        <div class="col-lg-7 col-md-12 d-flex justify-content-center align-items-center content-register2" id="bth-form-column">
+            <div class="register-form p-4 p-lg-5" id="bth-register-form">
+                <form action="#" method="post" id="bth-register-form-content">
+                    <div class="register-header mb-4" id="bth-form-header">
+                        <p>Kiểm tra thông tin</p>
+                        <p style="font-size: 14px; font-weight: 300; margin-top: 5px;" id="bth-info-text">Vui lòng kiểm tra lại các thông tin</p>
+                    </div>
+                    <h2 class="h2" id="bth-personal-info-header">Thông tin cá nhân</h2>
+                    <div class="mb-3" id="bth-name-group">
+                        <label for="bth-name" class="form-label">Họ và tên</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-name" class="form-control" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-dob-group">
+                        <label for="bth-dateofbirth" class="form-label">Ngày tháng năm sinh</label>
+                        <div class="input-container">
+                            <input type="date" id="bth-dateofbirth" class="form-control" readonly>
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-nationality-group">
+                        <label for="bth-nationality" class="form-label">Quốc tịch</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-nationality" class="form-control" readonly>
+                        </div>
+                    </div>          
+                    <div class="mb-3" id="bth-id-number-group">
+                        <label for="bth-id-number" class="form-label">Số CMND/CCCD</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-id-number" class="form-control" readonly>
+                        </div>
+                    </div>         
+                    <div class="mb-3" id="bth-issued-place-group">
+                        <label for="bth-issued-place" class="form-label">Nơi cấp</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-issued-place" class="form-control" readonly>
+                        </div>
+                    </div>   
+                    <div class="mb-3" id="bth-permanent-address-group">
+                        <label for="bth-permanent-address" class="form-label">Địa chỉ thường trú</label>
+                        <div class="input-container">
+                            <div class="address-selects">
+                                <div class="select-group" id="bth-permanent-country-group">
+                                    <label for="bth-permanent-country" class="form-label" style="font-size: 13px; font-weight: 300;">Quốc gia</label>
+                                    <select class="form-select" id="bth-permanent-country" aria-label="Chọn quốc gia">
+                                        <option value="" disabled selected>Chọn quốc gia</option>
+                                        <option value="vn">Việt Nam</option>
+                                        <option value="us">Mỹ</option>
+                                        <option value="jp">Nhật Bản</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="select-group" id="bth-permanent-city-group">
+                                    <label for="bth-permanent-city" class="form-label" style="font-size: 13px; font-weight: 500;">Tỉnh/Thành phố</label>
+                                    <select class="form-select" id="bth-permanent-city" aria-label="Chọn tỉnh/thành phố">
+                                        <option value="" disabled selected>Chọn tỉnh/thành phố</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">Hồ Chí Minh</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="select-group" id="bth-permanent-district-group">
+                                    <label for="bth-permanent-district" class="form-label" style="font-size: 13px; font-weight: 500;">Quận/Huyện</label>
+                                    <select class="form-select" id="bth-permanent-district" aria-label="Chọn quận/huyện">
+                                        <option value="" disabled selected>Chọn quận/huyện</option>
+                                        <option value="hq1">Hoàn Kiếm</option>
+                                        <option value="q1">Quận 1</option>
+                                        <option value="hc">Hải Châu</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-check" id="bth-use-same-address-group">
+                        <input class="form-check-input" type="checkbox" value="" id="bth-useSameAddress">
+                        <label class="form-check-label" for="bth-useSameAddress">Dùng địa chỉ này làm địa chỉ liên lạc</label>
+                    </div> 
+                    
+                    <div class="mb-3" id="bth-contact-address-group">
+                        <label for="bth-contact-country" class="form-label">Địa chỉ liên lạc</label>
+                        <div class="input-container">
+                            <div class="address-selects">
+                                <div class="select-group" id="bth-contact-country-group">
+                                    <label for="bth-contact-country" class="form-label" style="font-size: 13px; font-weight: 500;">Quốc gia</label>
+                                    <select class="form-select" id="bth-contact-country" aria-label="Chọn quốc gia">
+                                        <option value="" disabled selected>Chọn quốc gia</option>
+                                        <option value="vn">Việt Nam</option>
+                                        <option value="us">Mỹ</option>
+                                        <option value="jp">Nhật Bản</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="select-group" id="bth-contact-city-group">
+                                    <label for="bth-contact-city" class="form-label" style="font-size: 13px; font-weight: 500;">Tỉnh/Thành phố</label>
+                                    <select class="form-select" id="bth-contact-city" aria-label="Chọn tỉnh/thành phố">
+                                        <option value="" disabled selected>Chọn tỉnh/thành phố</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">Hồ Chí Minh</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="select-group" id="bth-contact-district-group">
+                                    <label for="bth-contact-district" class="form-label" style="font-size: 13px; font-weight: 500;">Quận/Huyện</label>
+                                    <select class="form-select" id="bth-contact-district" aria-label="Chọn quận/huyện">
+                                        <option value="" disabled selected>Chọn quận/huyện</option>
+                                        <option value="hq1">Hoàn Kiếm</option>
+                                        <option value="q1">Quận 1</option>
+                                        <option value="hc">Hải Châu</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="h2" id="bth-company-info-header">Thông tin doanh nghiệp</h2>
+                    <div class="mb-3" id="bth-company-name-group">
+                        <label for="bth-company-name" class="form-label">Tên doanh nghiệp</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-company-name" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3" id="bth-tax-code-group">
+                        <label for="bth-tax-code" class="form-label">Mã số thuế</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-tax-code" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3" id="bth-company-address-group">
+                        <label for="bth-company-address" class="form-label">Địa chỉ</label>
+                        <div class="input-container">
+                            <div class="address-selects">
+                                <div class="select-group" id="bth-company-country-group">
+                                    <label for="bth-company-country" class="form-label" style="font-size: 13px; font-weight: 500;">Quốc gia</label>
+                                    <select class="form-select" id="bth-company-country" aria-label="Chọn quốc gia">
+                                        <option value="" disabled selected>Chọn quốc gia</option>
+                                        <option value="vn">Việt Nam</option>
+                                        <option value="us">Mỹ</option>
+                                        <option value="jp">Nhật Bản</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="select-group" id="bth-company-city-group">
+                                    <label for="bth-company-city" class="form-label" style="font-size: 13px; font-weight: 500;">Tỉnh/Thành phố</label>
+                                    <select class="form-select" id="bth-company-city" aria-label="Chọn tỉnh/thành phố">
+                                        <option value="" disabled selected>Chọn tỉnh/thành phố</option>
+                                        <option value="hn">Hà Nội</option>
+                                        <option value="hcm">Hồ Chí Minh</option>
+                                        <option value="dn">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="select-group" id="bth-company-district-group">
+                                    <label for="bth-company-district" class="form-label" style="font-size: 13px; font-weight: 500;">Quận/Huyện</label>
+                                    <select class="form-select" id="bth-company-district" aria-label="Chọn quận/huyện">
+                                        <option value="" disabled selected>Chọn quận/huyện</option>
+                                        <option value="hq1">Hoàn Kiếm</option>
+                                        <option value="q1">Quận 1</option>
+                                        <option value="hc">Hải Châu</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="mb-3" id="bth-email-group">
+                        <label for="bth-email" class="form-label">Email</label>
+                        <div class="input-container">
+                            <input type="email" id="bth-email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-phone-group">
+                        <label for="bth-phone" class="form-label">Số điện thoại doanh nghiệp</label>
+                        <div class="input-container">
+                            <input type="tel" id="bth-phone" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <h2 class="h2" id="bth-bank-info-header">Tài khoản ngân hàng</h2>
+                    <div class="mb-3" id="bth-account-number-group">
+                        <label for="bth-account-number" class="form-label">Số tài khoản</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-account-number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-account-holder-group">
+                        <label for="bth-account-holder" class="form-label">Tên chủ tài khoản</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-account-holder" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3" id="bth-bank-name-group">
+                        <label for="bth-bank-name" class="form-label">Tên ngân hàng</label>
+                        <div class="input-container">
+                            <input type="text" id="bth-bank-name" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-check" id="bth-confirmation-group">
+                        <input class="form-check-input" type="checkbox" value="" id="bth-confirmation-checkbox">
+                        <label class="form-check-label" for="bth-confirmation-checkbox">Tôi xác nhận thông tin bên trên là hoàn toàn chính xác</label>
+                    </div> 
+                    
+                    <button type="submit" id="bth-submitButton" class="register-button btn btn-warning w-100 mt-3">Hoàn tất đăng ký</button>
+                    <p class="register mt-3 text-center" id="bth-back-link">
+                        <a href="" class="link-register">Quay lại</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal fade" id="bth-successModal" tabindex="-1" aria-labelledby="bth-successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bth-successModalLabel">Đăng ký thành công</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn đã đăng ký thành công!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Error Modal -->
+<div class="modal fade" id="bth-errorModal" tabindex="-1" aria-labelledby="bth-errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bth-errorModalLabel">Đăng ký thất bại</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Đã xảy ra lỗi khi đăng ký. Vui lòng thử lại sau!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/check.js"></script>
+</body>
+</html>

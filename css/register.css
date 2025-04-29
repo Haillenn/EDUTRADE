@@ -1,0 +1,504 @@
+/*--- reset code ---*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border: none;
+}
+
+/* start editing from here */
+a {
+	text-decoration: none;
+}
+.txt-rt {
+	text-align: right;
+} 
+.txt-lt {
+	text-align: left;
+} 
+.txt-center {
+	text-align: center;
+} 
+.float-rt {
+	float: right;
+} 
+.float-lt {
+	float: left;
+} 
+.clear {
+	clear: both;
+} 
+.pos-relative {
+	position: relative;
+}
+.pos-absolute {
+	position: absolute;
+} 
+.vertical-base {
+	vertical-align: baseline;
+} 
+.vertical-top {
+	vertical-align: top;
+}
+nav.vertical ul li {
+	display: block;
+} 
+nav.horizontal ul li {
+	display: inline-block;
+} 
+img {
+	max-width: 100%;
+}
+
+/*--- end reset code ---*/
+
+body {
+	background: url(../images/background-light.png) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.register-edutrade {
+	background-color: #ffffff5b;
+	width: 100%;
+	max-width: 1000px;
+	margin: 100px auto;
+	padding: 0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.register-edutrade .content-register1 {
+	background-color: azure;
+	background-position: center;
+	background-size: cover;
+	height: 600px; 
+	border-radius: 10px 0 0 10px;
+	flex: 1; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.h1{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.tag-name{
+    font-style: bold;
+    font-weight: 300;
+}
+
+.logo {
+	max-width: 70%; 
+	height: auto; 
+}
+
+.register-edutrade .content-register2 {
+	padding: 20px 30px; 
+	flex: 1; 
+}
+
+.register-header {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px; 
+	text-align: center;
+}
+
+
+.register-button {
+	margin-top: 15px;
+	width: 100%;
+	border-radius: 5px;
+	height: 40px;
+	background-color: #47df93;
+	color: #fff;
+	border: none;
+    text-transform: uppercase;
+}
+
+.register-button:hover {
+	background-color: #22c581;
+	color: #fff;
+	font-style: bold;
+}
+
+.card {
+    display: none; 
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(38, 228, 133, 0.87);
+    margin-bottom: 7px;
+}
+.card.show {
+    display: block;
+	cursor: pointer;
+}
+.checkbox-label {
+    background-color: #47df93;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 7px;
+}
+.checkbox-label:hover {
+    background-color: #0dd894;
+}
+
+.info{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.link-register{
+    color: #0dd894;
+}
+
+/* scroll */
+.register-form {
+    max-height: 555px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.register-form::-webkit-scrollbar {
+    width: 5px;
+}
+
+.register-form::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+.register-form::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+.register-form::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.register-form::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* infoRegister */
+.requirement-text {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+.requirement-text.invalid {
+    color: red; 
+}
+
+.requirement-text.valid {
+    color: green;
+}
+
+.error-text {
+    font-size: 13px;
+    color: red;
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+/* identification */
+
+.custom-border {
+    border: 2px dashed #47df93; 
+    border-radius: 7px; 
+    padding: 10px; 
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: 300; 
+}
+
+.upload-section1 {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 5px;
+}
+.upload-section1 .upload-a{
+    color: #22c581;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.upload-section2 {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.upload-section2 .upload-a{
+    color: #22c581;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.link-register{
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.upload-section2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.upload-section2 p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.signature-container {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.signature-canvas {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+.signature-info p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.signature-info i {
+    color: #666;
+}
+
+.upload-section2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.upload-section2 p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.upload-image {
+    cursor: pointer;
+    border-radius: 8px; /* Bo tròn 7px */
+    width: 100%;
+    max-width: 300px; /* Giới hạn kích thước bức ảnh */
+    display: block;
+    margin: auto;
+    border: 2px dashed #22c581; /* Border 2px, nét đứt và màu xanh */
+    box-sizing: border-box; /* Đảm bảo kích thước bao gồm border và padding */
+    padding: 3px; /* Padding 3px mỗi chiều */
+}
+
+
+.upload-info p {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.upload-info i {
+    color: #666;
+}
+
+/* Hide the file input */
+.file-input {
+    display: none;
+}
+
+.requirement-content {
+	display: none;
+}
+.requirement-content.active {
+	display: block;
+}
+
+/* contact */
+.input-container {
+	display: flex;
+	align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.input-container .form-control {
+	flex: 1; 
+	margin-right: 10px;
+}
+
+.input-container .btn {
+	flex-shrink: 0; 
+}
+
+.requirement-text {
+	font-size: 13px;
+	color: #666;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.required-indicator {
+	color: red;
+	margin-right: 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+.h2{
+	color: #333;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.form-check{
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+
+
+.address-selects {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các thẻ select */
+}
+
+.select-group {
+    flex: 1; /* Đảm bảo các thẻ select có cùng chiều rộng */
+}
+
+.select-group select {
+    width: 100%; /* Chiều rộng của thẻ select chiếm toàn bộ phần tử chứa */
+}
+
+/* modal */
+/* Modal container */
+.modal-content {
+    border-radius: 10px; /* Bo tròn góc modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng cho modal */
+    transition: transform 0.3s ease-out; /* Hiệu ứng chuyển động khi mở/modal */
+}
+
+/* Header của modal */
+.modal-header {
+    background-color: #007bff; /* Màu nền cho header */
+    color: #fff; /* Màu chữ cho header */
+    border-bottom: none; /* Xóa đường viền dưới header */
+    border-top-left-radius: 10px; /* Bo tròn góc trên trái */
+    border-top-right-radius: 10px; /* Bo tròn góc trên phải */
+}
+
+/* Nội dung của modal */
+.modal-body {
+    background-color: #f9f9f9; /* Màu nền cho nội dung */
+    color: #333; /* Màu chữ cho nội dung */
+    font-size: 16px; /* Kích thước chữ cho nội dung */
+    padding: 20px; /* Padding cho nội dung */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+/* Footer của modal */
+.modal-footer {
+    border-top: none; /* Xóa đường viền trên footer */
+    padding: 10px 20px; /* Padding cho footer */
+    background-color: #f1f1f1; /* Màu nền cho footer */
+}
+
+/* Nút đóng modal */
+.btn-close {
+    filter: invert(1); /* Đổi màu nút đóng cho phù hợp với nền tối */
+}
+
+/* Nút modal */
+.btn {
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Nút modal trong trạng thái hover */
+.btn:hover {
+    background-color: #19a53c; 
+    color: #fff; 
+}
+
+#bth-successModal .modal-content {
+    border: 2px solid #28a745;
+}
+
+#bth-successModal .modal-header {
+    background-color: #28a745; 
+}
+
+#bth-successModal .modal-footer .btn-secondary {
+    background-color: #28a745; 
+    border: none; 
+}
+
+#bth-errorModal .modal-content {
+    border: 2px solid #dc3545; 
+}
+
+#bth-errorModal .modal-header {
+    background-color: #dc3545; 
+}
+
+#bth-errorModal .modal-footer .btn-secondary {
+    background-color: #dc3545; 
+    border: none; 
+}
+
+.requirement-content {
+    display: none; 
+}
+.requirement-content.active {
+    display: block; 
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link href="css/register.css" rel='stylesheet' type='text/css' media="all" />
+</head>
+<body>
+<div class="container d-flex justify-content-center align-items-center min-vh-100" id="bth-main-container">
+    <div class="row w-100 register-edutrade mx-auto" id="bth-register-row">
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center content-register1" id="bth-logo-column">
+            <img src="images/logo.jpg" class="logo" alt="Logo" id="bth-logo-image">
+        </div>
+        <div class="col-lg-7 col-md-12 d-flex justify-content-center align-items-center content-register2" id="bth-form-column">
+            <div class="register-form p-4 p-lg-5" id="bth-registration-form">
+                <form action="#" method="post" id="bth-registration-form-content">
+                    <div class="register-header text-center mb-4" id="bth-form-header">
+                        <p>Chào mừng đến với</p>
+                        <p style="color: #47df93;">EDU TRADE</p>
+                    </div>
+                    <div class="container mt-4" id="bth-form-body">
+                        <h1 class="h1" id="bth-account-type-title">Bạn là ...</h1>
+                        
+                        <div class="form-check" id="bth-personal-account-section">
+                            <input class="form-check-input" type="radio" name="objectType" id="bth-personalRadio">
+                            <label class="form-check-label checkbox-label" for="bth-personalRadio">
+                                Tài khoản cá nhân trong nước
+                            </label>
+                            <div class="card requirement-content" id="bth-personalContent">
+                                <h5>Yêu cầu hồ sơ (Cá nhân)</h5>
+                                <ul>
+                                    <li>Căn cước hoặc hộ chiếu bản gốc còn hiệu lực</li>
+                                    <li>Máy tính hoặc điện thoại có camera</li>
+                                    <li>Xem hướng dẫn đăng ký tài khoản <a href="#" id="bth-personal-guide-link">tại đây</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="form-check" id="bth-personal-account-foreign-section">
+                            <input class="form-check-input" type="radio" name="objectType" id="bth-personalPublicRadio">
+                            <label class="form-check-label checkbox-label" for="bth-personalPublicRadio">
+                                Tài khoản cá nhân nước ngoài
+                            </label>
+                            <div class="card requirement-content" id="bth-personalPublicContent">
+                                <h5>Yêu cầu hồ sơ (Cá nhân)</h5>
+                                <ul>
+                                    <li>Căn cước hoặc hộ chiếu bản gốc còn hiệu lực</li>
+                                    <li>Máy tính hoặc điện thoại có camera</li>
+                                    <li>Xem hướng dẫn đăng ký tài khoản <a href="#" id="bth-personal-public-guide-link">tại đây</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-check" id="bth-organization-vn-section">
+                            <input class="form-check-input" type="radio" name="objectType" id="bth-organizationRadio">
+                            <label class="form-check-label checkbox-label" for="bth-organizationRadio">
+                                Tài khoản Doanh nghiệp VN
+                            </label>
+                            <div class="card requirement-content" id="bth-organizationContent">
+                                <h5>Yêu cầu hồ sơ Doanh nghiệp</h5>
+                                <ul>
+                                    <li>Căn cước hoặc hộ chiếu bản gốc người đại diện</li>
+                                    <li>Giấy phép đăng ký kinh doanh của doanh nghiệp</li>
+                                    <li>Máy tính hoặc điện thoại có camera</li>
+                                    <li>Xem hướng dẫn đăng ký tài khoản <a href="#" id="bth-organization-guide-link">tại đây</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-check" id="bth-organization-foreign-section">
+                            <input class="form-check-input" type="radio" name="objectType" id="bth-organizationPublicRadio">
+                            <label class="form-check-label checkbox-label" for="bth-organizationPublicRadio">
+                                Tài khoản Doanh nghiệp nước ngoài
+                            </label>
+                            <div class="card requirement-content" id="bth-organizationPublicContent">
+                                <h5>Yêu cầu hồ sơ (Tổ chức)</h5>
+                                <ul>
+                                    <li>Căn cước hoặc hộ chiếu bản gốc người đại diện</li>
+                                    <li>Giấy phép đăng ký kinh doanh của doanh nghiệp</li>
+                                    <li>Máy tính hoặc điện thoại có camera</li>
+                                    <li>Xem hướng dẫn đăng ký tài khoản <a href="#" id="bth-organization-public-guide-link">tại đây</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info" id="bth-info-section">
+                        <p>Lưu ý:</p>
+                        <p>- Cần chọn đúng loại tài khoản phù hợp để tiến hành bước tiếp theo</p>
+                        <p>- Quý khách chụp ảnh CMND/CCCD và chân dung để được xác thực và ký hợp đồng điện tử.</p>
+                    </div>
+                    <button type="submit" id="bth-submitButton" class="register-button btn btn-warning w-100 mt-3">Đăng ký tài khoản</button>
+                    <p class="register mt-3 text-center" id="bth-login-link">
+                        Quay trở lại <a href="login.html" class="link-register">Đăng nhập</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/register1.js"></script> 
+</body>
+</html>
